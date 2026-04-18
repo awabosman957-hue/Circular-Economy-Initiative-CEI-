@@ -75,6 +75,113 @@
         .gallery-item:hover { transform: translateY(-5px); }
         .gallery-item img {
             width: 100%;
+            height: 300px; /* Increased height for portraits */
+            object-fit: cover;
+        }
+        .gallery-item .step-label {
+            background: #003366;
+            color: white;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            border-radius: 0 0 10px 10px;
+            font-weight: bold;
+            margin-top: -10px;
+            position: relative;
+            z-index: 1;
+        }
+        .gallery-item p {
+            padding: 1rem;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #00a859; /* Green for action */
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover { background: #008f4c; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .hero { padding: 2rem 1rem; }
+            .content-box { padding: 1.5rem; }
+            .gallery-item img { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مبادرة الاقتصاد الدائري</h1>
+        <p>Circular Economy Initiative (CEI)</p>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>نحو مستقبل مستدام وخالٍ من النفايات</h2>
+            <p>مبادرة شبابية رائدة في السودان تهدف لتحويل العبوات الفارغة إلى موارد اقتصادية، مساهمةً في تحقيق أهداف التنمية المستدامة.</
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+        .hero h2 { margin-top: 0; font-size: 2rem; }
+        
+        .section-title {
+            color: #003366;
+            border-bottom: 4px solid #00a859; /* Green accent */
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        .content-box {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        /* Photo Gallery Section */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover { transform: translateY(-5px); }
+        .gallery-item img {
+            width: 100%;
             height: 200px;
             object-fit: cover;
         }
