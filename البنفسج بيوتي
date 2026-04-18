@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البنفسج بيوتي سنتر - El Banafseg Beauty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6a4c93; /* بنفسجي ملكي */
+            --secondary-color: #f3e8ff; /* بنفسجي فاتح جداً */
+            --accent-color: #d4af37; /* ذهبي هادئ */
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* الهيدر والمنيو */
+        header {
+            background-color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Amiri', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* قسم الترحيب Hero Section */
+        .hero {
+            background: linear-gradient(rgba(106, 76, 147, 0.1), rgba(106, 76, 147, 0.1)), 
+                        url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px white;
+        }
+
+        /* تصنيفات المنتجات */
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 2rem 5%;
+            gap: 15px;
+        }
+
+        .cat-card {
+            background: var(--white);
+            padding: 10px 25px;
+            border-radius: 30px;
+            border: 1px solid var(--primary-color);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .cat-card:hover, .cat-card.active {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* شبكة المنتجات */
+        .products-container {
+            padding: 2rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-info .category-tag {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .buy-btn {
+            margin-top: 1rem;
+            padding: 8px 20px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* الفوتر */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* للموبايل */
+        @media (max-width: 768px) {
+            header { flex-direction: column; }
+            nav ul { margin-top: 1rem; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">البنفسج بيوتي سنتر</div>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">المتجر</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">اتصلي بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>جمالك يبدأ من هنا</h1>
+        <p>أرقى منتجات العناية والتجميل لجمال يدوم</p>
+    </section>
+
+    <div class="categories">
+        <div class="cat-card active">الكل</div>
+        <div class="cat-card">سكين كير (Skin Care)</div>
+        <div class="cat-card">هير كير (Hair Care)</div>
+        <div class="cat-card">عطور</div>
+        <div class="cat-card">أطفال</div>
+        <div class="cat-card">إكسسوارات</div>
+    </div>
+
+    <section class="products-container">
+        <div class="product-card">
+            <div class="product-image">صورة المنتج</div>
+            <div class="product-info">
+                <span class="category-tag">سكين كير</span>
+                <h3>سيروم فيتامين C النقي</h3>
+                <p class="price">150 ر.س</p>
+                <button class="buy-btn">أضيفي للسلة</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">صورة المنتج</div>
+            <div class="product-info">
+                <span class="category-tag">عطور</span>
+                <h3>عطر لافندر فرنسي</h3>
+                <p class="price">280 ر.س</p>
+                <button class="buy-btn">أضيفي للسلة</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">صورة المنتج</div>
+            <div class="product-info">
+                <span class="category-tag">هير كير</span>
+                <h3>مجموعة الزيوت الطبيعية</h3>
+                <p class="price">120 ر.س</p>
+                <button class="buy-btn">أضيفي للسلة</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">صورة المنتج</div>
+            <div class="product-info">
+                <span class="category-tag">أطفال</span>
+                <h3>شامبو لطيف للأطفال</h3>
+                <p class="price">45 ر.س</p>
+                <button class="buy-btn">أضيفي للسلة</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة لـ البنفسج بيوتي سنتر &copy; 2024</p>
+        <p>تابعينا على إنستجرام | واتساب</p>
+    </footer>
+
+</body>
+</html>
