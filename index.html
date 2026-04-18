@@ -5,208 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مبادرة الاقتصاد الدائري | CEI</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f2f5; color: #1c1e21; margin: 0; padding: 0; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #003366, #0056b3); color: white; padding: 3rem 1rem; text-align: center; }
-        .container { width: 95%; max-width: 800px; margin: auto; padding: 20px; }
-        .hero-card { background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; margin-bottom: 30px; border-top: 8px solid #00a859; }
-        .hero-card h2 { color: #003366; margin-top: 0; }
-        .section-title { color: #003366; border-right: 5px solid #00a859; padding-right: 15px; margin: 40px 0 20px; font-size: 1.5rem; }
-        .step-card { background: white; border-radius: 15px; overflow: hidden; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
-        .step-card img { width: 100%; height: 250px; object-fit: cover; display: block; }
-        .step-text { padding: 20px; text-align: center; font-weight: bold; font-size: 1.2rem; color: #003366; }
-        .content-box { background: white; padding: 25px; border-radius: 15px; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .btn { display: block; background: #00a859; color: white; padding: 15px; text-decoration: none; border-radius: 50px; text-align: center; font-weight: bold; font-size: 1.2rem; transition: 0.3s; margin-top: 20px; }
-        .footer { text-align: center; padding: 30px; color: #666; font-size: 0.9rem; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8fafc; color: #1e293b; margin: 0; padding: 0; line-height: 1.6; }
+        header { background: #0f172a; color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid #22c55e; }
+        .container { width: 90%; max-width: 600px; margin: auto; padding: 20px; }
+        .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 20px; border-right: 6px solid #3b82f6; }
+        .hero-title { font-size: 1.5rem; color: #1e3a8a; margin-top: 0; }
+        .step-box { background: #eff6ff; padding: 20px; border-radius: 12px; margin-bottom: 15px; text-align: center; border: 1px solid #bfdbfe; }
+        .step-number { background: #3b82f6; color: white; width: 30px; height: 30px; display: inline-block; border-radius: 50%; line-height: 30px; margin-bottom: 10px; }
+        .step-title { display: block; font-weight: bold; color: #1e3a8a; font-size: 1.1rem; }
+        .btn { display: block; background: #22c55e; color: white; padding: 18px; text-decoration: none; border-radius: 12px; text-align: center; font-weight: bold; font-size: 1.2rem; transition: 0.3s; margin-top: 25px; box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.4); }
+        .footer { text-align: center; padding: 40px; color: #64748b; font-size: 0.8rem; }
+        /* تصميم الأيقونات البرمجية لضمان الظهور */
+        .icon { width: 60px; height: 60px; margin: 10px auto; fill: #3b82f6; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>مبادرة الاقتصاد الدائري</h1>
-        <p>Circular Economy Initiative (CEI)</p>
+        <h1 style="margin:0;">مبادرة الاقتصاد الدائري</h1>
+        <p style="opacity: 0.8; margin: 10px 0 0;">Circular Economy Initiative (CEI)</p>
     </header>
 
     <div class="container">
-        <div class="hero-card">
-            <h2>نحو مستقبل مستدام وخالٍ من النفايات</h2>
-            <p>مبادرة شبابية رائدة في السودان تهدف لتحويل العبوات الفارغة إلى موارد اقتصادية حقيقية.</p>
+        <div class="card" style="border-right-color: #22c55e; text-align: center;">
+            <h2 class="hero-title">نحو سودان أخضر ومستدام</h2>
+            <p>نعمل معاً لتحويل النفايات البلاستيكية إلى فرص اقتصادية حقيقية تدعم المجتمع وتحمي البيئة.</p>
         </div>
 
-        <h3 class="section-title">خطواتنا نحو التغيير</h3>
+        <h3 style="color: #0f172a; margin: 30px 0 15px;">خطوات المبادرة:</h3>
 
-        <div class="step-card">
-            <img src="https://images.unsplash.com/photo-1536939459926-301728717817?q=80&w=800" alt="شباب يجمعون البلاستيك">
-            <div class="step-text">1. عمليات جمع وفرز العبوات بنشاط شبابي</div>
+        <div class="step-box">
+            <span class="step-number">1</span>
+            <span class="step-title">جمع وفرز العبوات بنشاط شبابي</span>
+            <p style="font-size: 0.9rem; color: #64748b;">تجميع البلاستيك من الأحياء والجامعات السودانية.</p>
         </div>
 
-        <div class="step-card">
-            <img src="https://images.unsplash.com/photo-1605600611284-1752078a8d50?q=80&w=800" alt="إعادة تدوير">
-            <div class="step-text">2. تحويل النفايات إلى مواد خام أولية</div>
+        <div class="step-box" style="background: #f0fdf4; border-color: #bbf7d0;">
+            <span class="step-number" style="background: #22c55e;">2</span>
+            <span class="step-title">تحويل النفايات إلى مواد خام</span>
+            <p style="font-size: 0.9rem; color: #64748b;">معالجة البلاستيك لإعادة استخدامه في الصناعة.</p>
         </div>
 
-        <div class="step-card">
-            <img src="https://images.unsplash.com/photo-1552033349-2ed86bbbd000?q=80&w=800" alt="أطفال والبيئة">
-            <div class="step-text">3. حماية البيئة للأجيال القادمة</div>
+        <div class="step-box" style="background: #fff7ed; border-color: #ffedd5;">
+            <span class="step-number" style="background: #f59e0b;">3</span>
+            <span class="step-title">حماية البيئة للأجيال القادمة</span>
+            <p style="font-size: 0.9rem; color: #64748b;">تحقيق أهداف التنمية المستدامة في السودان.</p>
         </div>
 
-        <div class="content-box">
-            <h3 style="color:#003366; margin-top:0;">رؤيتنا وأهدافنا</h3>
-            <p>نسعى لتوطين مفاهيم الاقتصاد الدائري في السودان، وتقليل التلوث البلاستيكي، مع خلق فرص عمل خضراء تساهم في دعم الاقتصاد الوطني وتحقيق التنمية المستدامة.</p>
+        <div class="card">
+            <h3 style="margin-top:0; color: #1e3a8a;">رؤيتنا</h3>
+            <p>أن نكون المنصة الرائدة في السودان لتعزيز الاقتصاد الدائري من خلال دمج الشباب في مشاريع حماية البيئة وتطوير الموارد.</p>
         </div>
 
-        <div class="content-box">
-            <h3 style="color:#003366; text-align:center; margin-top:0;">كن جزءاً من الحل</h3>
-            <p style="text-align:center;">انضم إلينا الآن لنبني وطناً أنظف وأجمل.</p>
-            <a href="volunteer.html" class="btn">سجل كمتطوع الآن</a>
-        </div>
-
+        <a href="volunteer.html" class="btn">انضم إلينا كمتطوع الآن</a>
     </div>
 
     <div class="footer">
-        <p>جميع الحقوق محفوظة &copy; 2026 | مبادرة الاقتصاد الدائري - السودان</p>
-    </div>
-
-</body>
-</html>
-                <img src="https://images.unsplash.com/photo-1591193512858-12bb5f0d8954?auto=format&fit=crop&q=80&w=500" alt="جمع العبوات">
-                <p>عمليات جمع وفرز العبوات</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=500" alt="إعادة التدوير">
-                <p>تحويل النفايات لمواد خام</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=500" alt="البيئة">
-                <p>الأثر البيئي المستدام</p>
-            </div>
-        </div>
-
-        <div class="content-box">
-            <h3 class="section-title">رؤيتنا وأهدافنا</h3>
-            <p>نسعى لأن نكون المنصة الرائدة في السودان لتعزيز "الاقتصاد الدائري". نحن نركز على جمع وفرز عبوات العصائر والمواد الغذائية الفارغة لإعادة إدماجها في العملية الإنتاجية، مما يساهم في حماية البيئة وخلق فرص عمل خضراء للشباب.</p>
-        </div>
-
-        <div class="content-box" style="text-align: center;">
-            <h3 class="section-title">كن جزءاً من التغيير</h3>
-            <p>انضم إلينا كمتطوع أو شريك بيئي لتعزيز الأثر الإيجابي في مجتمعنا.</p>
-            <a href="volunteer.html" class="btn">انضم كمتطوع الآن</a>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>جميع الحقوق محفوظة &copy; 2026 | مبادرة الاقتصاد الدائري - السودان</p>
-    </div>
-</body>
-</html>
- border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        /* Photo Gallery Section */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .gallery-item {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .gallery-item:hover { transform: translateY(-5px); }
-        .gallery-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .gallery-item p {
-            padding: 1rem;
-            margin: 0;
-            text-align: center;
-            font-weight: bold;
-            color: #555;
-        }
-
-        .footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #00a859; /* Green for action */
-            color: white;
-            padding: 1rem 2.5rem;
-            text-decoration: none;
-            border-radius: 50px;
-            margin-top: 1rem;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover { background: #008f4c; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        
-        ul { padding-right: 1.5rem; }
-        li { margin-bottom: 0.7rem; }
-
-        @media (max-width: 600px) {
-            header h1 { font-size: 2rem; }
-            .hero { padding: 2rem 1rem; }
-            .content-box { padding: 1.5rem; }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>مبادرة الاقتصاد الدائري</h1>
-        <p>Circular Economy Initiative (CEI)</p>
-    </header>
-
-    <div class="container">
-        <div class="hero">
-            <h2>نحو مستقبل مستدام وخالٍ من النفايات</h2>
-            <p>مبادرة شبابية رائدة في السودان تهدف لتحويل العبوات الفارغة إلى موارد اقتصادية، مساهمةً في تحقيق أهداف التنمية المستدامة.</p>
-        </div>
-
-        <h3 class="section-title">من أعمالنا</h3>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="https://img.freepik.com/free-photo/industrial-plastic-recycling-concept_23-2150338166.jpg" alt="جمع العبوات">
-                <p>عمليات جمع وفرز العبوات</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://img.freepik.com/free-photo/recycled-materials-concept_23-2150338168.jpg" alt="المواد الخام">
-                <p>تحويل النفايات لمواد خام</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://img.freepik.com/free-photo/tree-growing-from-recycled-materials_23-2150338162.jpg" alt="الأثر البيئي">
-                <p>الأثر البيئي المستدام</p>
-            </div>
-        </div>
-
-        <div class="content-box">
-            <h3 class="section-title">رؤيتنا وأهدافنا</h3>
-            <p>نسعى لأن نكون المنصة الرائدة في السودان لتعزيز "الاقتصاد الدائري". نحن نركز على جمع وفرز عبوات العصائر والمواد الغذائية الفارغة لإعادة إدماجها في العملية الإنتاجية، مما يساهم في حماية البيئة وخلق فرص عمل خضراء للشباب.</p>
-        </div>
-
-        <div class="content-box" style="text-align: center;">
-            <h3 class="section-title">كن جزءاً من التغيير</h3>
-            <p>انضم إلينا كمتطوع أو شريك بيئي لتعزيز الأثر الإيجابي في مجتمعنا.</p>
-            <a href="volunteer.html" class="btn">انضم كمتطوع الآن</a>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>جميع الحقوق محفوظة &copy; 2026 | مبادرة الاقتصاد الدائري - السودان</p>
+        <p>تم التطوير بواسطة المهندس اواب عثمان</p>
+        <p>جميع الحقوق محفوظة &copy; 2026</p>
     </div>
 
 </body>
