@@ -5,63 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مبادرة الاقتصاد الدائري | CEI</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8fafc; color: #1e293b; margin: 0; padding: 0; line-height: 1.6; }
-        header { background: #0f172a; color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid #22c55e; }
-        .container { width: 90%; max-width: 600px; margin: auto; padding: 20px; }
-        .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 20px; border-right: 6px solid #3b82f6; }
-        .hero-title { font-size: 1.5rem; color: #1e3a8a; margin-top: 0; }
-        .step-box { background: #eff6ff; padding: 20px; border-radius: 12px; margin-bottom: 15px; text-align: center; border: 1px solid #bfdbfe; }
-        .step-number { background: #3b82f6; color: white; width: 30px; height: 30px; display: inline-block; border-radius: 50%; line-height: 30px; margin-bottom: 10px; }
-        .step-title { display: block; font-weight: bold; color: #1e3a8a; font-size: 1.1rem; }
-        .btn { display: block; background: #22c55e; color: white; padding: 18px; text-decoration: none; border-radius: 12px; text-align: center; font-weight: bold; font-size: 1.2rem; transition: 0.3s; margin-top: 25px; box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.4); }
-        .footer { text-align: center; padding: 40px; color: #64748b; font-size: 0.8rem; }
-        /* تصميم الأيقونات البرمجية لضمان الظهور */
-        .icon { width: 60px; height: 60px; margin: 10px auto; fill: #3b82f6; }
+        :root {
+            --primary: #1a365d;
+            --secondary: #38a169;
+            --accent: #3182ce;
+            --bg: #f7fafc;
+        }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg); color: #2d3748; margin: 0; padding: 0; line-height: 1.6; }
+        header { background: var(--primary); color: white; padding: 50px 20px; text-align: center; border-bottom: 8px solid var(--secondary); }
+        .container { max-width: 600px; margin: auto; padding: 20px; }
+        .card { background: white; padding: 30px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); margin-bottom: 25px; border-top: 6px solid var(--accent); }
+        .icon-box { font-size: 50px; margin-bottom: 15px; display: block; }
+        h2, h3 { color: var(--primary); margin-top: 0; }
+        .step-item { background: #ebf8ff; padding: 20px; border-radius: 15px; margin-bottom: 15px; border-right: 5px solid var(--accent); text-align: right; }
+        
+        /* استمارة التطوع */
+        form { text-align: right; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: var(--primary); }
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 2px solid #e2e8f0; border-radius: 10px; box-sizing: border-box; font-family: inherit; }
+        textarea { height: 100px; resize: vertical; }
+        
+        .btn { display: block; background: var(--secondary); color: white; padding: 18px; text-decoration: none; border-radius: 15px; text-align: center; font-weight: bold; font-size: 1.2rem; border: none; cursor: pointer; width: 100%; transition: 0.3s; }
+        .btn:hover { background: #2f855a; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(56, 161, 105, 0.3); }
+        
+        .footer { text-align: center; padding: 40px; color: #a0aec0; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1 style="margin:0;">مبادرة الاقتصاد الدائري</h1>
-        <p style="opacity: 0.8; margin: 10px 0 0;">Circular Economy Initiative (CEI)</p>
+        <h1>مبادرة الاقتصاد الدائري</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">نحو سودان أنظف ومستقبل أخضر</p>
     </header>
 
     <div class="container">
-        <div class="card" style="border-right-color: #22c55e; text-align: center;">
-            <h2 class="hero-title">نحو سودان أخضر ومستدام</h2>
-            <p>نعمل معاً لتحويل النفايات البلاستيكية إلى فرص اقتصادية حقيقية تدعم المجتمع وتحمي البيئة.</p>
-        </div>
-
-        <h3 style="color: #0f172a; margin: 30px 0 15px;">خطوات المبادرة:</h3>
-
-        <div class="step-box">
-            <span class="step-number">1</span>
-            <span class="step-title">جمع وفرز العبوات بنشاط شبابي</span>
-            <p style="font-size: 0.9rem; color: #64748b;">تجميع البلاستيك من الأحياء والجامعات السودانية.</p>
-        </div>
-
-        <div class="step-box" style="background: #f0fdf4; border-color: #bbf7d0;">
-            <span class="step-number" style="background: #22c55e;">2</span>
-            <span class="step-title">تحويل النفايات إلى مواد خام</span>
-            <p style="font-size: 0.9rem; color: #64748b;">معالجة البلاستيك لإعادة استخدامه في الصناعة.</p>
-        </div>
-
-        <div class="step-box" style="background: #fff7ed; border-color: #ffedd5;">
-            <span class="step-number" style="background: #f59e0b;">3</span>
-            <span class="step-title">حماية البيئة للأجيال القادمة</span>
-            <p style="font-size: 0.9rem; color: #64748b;">تحقيق أهداف التنمية المستدامة في السودان.</p>
-        </div>
-
         <div class="card">
-            <h3 style="margin-top:0; color: #1e3a8a;">رؤيتنا</h3>
-            <p>أن نكون المنصة الرائدة في السودان لتعزيز الاقتصاد الدائري من خلال دمج الشباب في مشاريع حماية البيئة وتطوير الموارد.</p>
+            <span class="icon-box">🌍</span>
+            <h2>رؤيتنا وأهدافنا</h2>
+            <p>نعمل على تحويل النفايات البلاستيكية في السودان إلى موارد اقتصادية، حماية للبيئة ودعماً للشباب من خلال الاقتصاد الدائري.</p>
         </div>
 
-        <a href="volunteer.html" class="btn">انضم إلينا كمتطوع الآن</a>
+        <h3 style="text-align: right; margin-right: 10px;">كيف نعمل؟</h3>
+        <div class="step-item">
+            <strong>1. الجمع والفرز:</strong> تجميع عبوات العصائر والمواد الغذائية من الأحياء والجامعات.
+        </div>
+        <div class="step-item" style="background: #f0fff4; border-right-color: var(--secondary);">
+            <strong>2. إعادة التدوير:</strong> تحويل هذه العبوات إلى مواد أولية تدخل في الصناعة مرة أخرى.
+        </div>
+
+        <div class="card" id="volunteer">
+            <span class="icon-box">🤝</span>
+            <h2>انضم كمتطوع الآن</h2>
+            <p style="margin-bottom: 25px;">كن جزءاً من الحل وساهم في بناء مستقبل السودان البيئي.</p>
+            
+            <form action="https://formspree.io/f/wahab.osman.957@gmail.com" method="POST">
+                <label>الاسم الكامل:</label>
+                <input type="text" name="name" placeholder="أدخل اسمك هنا" required>
+
+                <label>العنوان:</label>
+                <input type="text" name="address" placeholder="مكان السكن" required>
+
+                <label>البريد الإلكتروني:</label>
+                <input type="email" name="email" placeholder="email@example.com" required>
+
+                <label>لماذا تريد التطوع؟</label>
+                <textarea name="message" placeholder="اكتب مهاراتك أو سبب رغبتك في الانضمام" required></textarea>
+
+                <button type="submit" class="btn">إرسال طلب الانضمام</button>
+            </form>
+        </div>
     </div>
 
     <div class="footer">
-        <p>تم التطوير بواسطة المهندس اواب عثمان</p>
+        <p>تصميم وتطوير: المهندس اواب عثمان</p>
         <p>جميع الحقوق محفوظة &copy; 2026</p>
     </div>
 
